@@ -1,8 +1,15 @@
-\documentclass[]{resume-openfont}
+\documentclass[10pt]{resume-openfont}
+% \usepackage[margin=0.75in]{geometry}
 \usepackage{fancyhdr}
 \usepackage{multicol}
+\usepackage{setspace}
+\setstretch{0.9}
+
 \pagestyle{fancy}
 \fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % Removes the horizontal line in the header
+\setlength\headheight{14pt}
+\setlength\footskip{14pt}
 
 \begin{document}
 
@@ -13,120 +20,50 @@
 }
 \end{minipage}
 
-\vspace{2.5 mm}
+\vspace{1mm} % Reduced space
 
-% \begin{minipage}[t]{0.33\textwidth} 
-%     % Education - This will take up one-third of the width
-%     \section{\Large Education} 
-%     \subsection{Texas A\&M University}
-%     \descript{BS in Computer Engineering}
-%     \descript{\normalsize Minor in Cyber Security}
-%     \location{May 2021 | College Station, TX}
-%     Summa Cum Laude \\
-%     \location{GPA: 3.94 / 4.0}
-% \end{minipage}%
-% \hfill
-% \begin{minipage}[t]{0.66\textwidth}
-%     % Skills - This will take up two-thirds of the width
-%     \begin{center}
-%         \section{\Large Skills}
-%     \end{center}
-%     \begin{minipage}[t]{0.33\textwidth}
-%         \subsection{Languages}
-%         Python \textbullet{} C/C++ \textbullet{} C\# \\
-%         JavaScript \textbullet{} CSS \\
-%     \end{minipage}%
-%     \begin{minipage}[t]{0.66\textwidth}
-%         \subsection{Tools}
-%         Azure \textbullet{} Databricks \textbullet{} Git \\
-%         ONNX \textbullet{} Numpy \textbullet{} Pandas \textbullet{} GraphQL \\
-%         MongoDB \textbullet{} PyTorch \textbullet{} Tensorflow
-%     \end{minipage}
-% \end{minipage}
-
-% % Three-column Layout: Education, Coursework, Skills
-% \begin{minipage}[t]{1\textwidth} 
-% \begin{multicols}{3}
-%     % Education
-%     \section{\Large Education} 
-%     \subsection{Texas A\&M University}
-%     \descript{BS in Computer Engineering}
-%     \descript{\normalsize Minor in Cyber Security}
-%     \location{May 2021 | College Station, TX}
-%     Summa Cum Laude \\
-%     \location{GPA: 3.94 / 4.0}
-%     \sectionsep
-%     \vfill\null
-
-%     \columnbreak
-
-%     % Skills
-%     \section{\Large Skills}
-%     \subsection{Languages}
-%     Python \textbullet{} C/C++ \textbullet{} C\# \\
-%     JavaScript \textbullet{} CSS \\
-%     \vfill\null
-%     \subsection{Tools}
-%     Azure \textbullet{} Databricks \textbullet{} Git/Github/Bitbucket/Gitlab \\ 
-%     ONNX \textbullet{} Numpy \textbullet{} Pandas \\
-%     GraphQL \textbullet{} MongoDB
-%     PyTorch \textbullet{} Tensorflow \\
-%     \sectionsep
-%     \vfill\null
-
-% \end{multicols}
-% \end{minipage} 
-
-% \vspace{-5 mm}
-
-\begin{minipage}[t]{1\textwidth}
-    \section{Education}
-    \titlerule
-    \vspace{2.5 mm}
-
-    \runsubsection{Texas A\&M University}
-    \descript{| BS in Computer Engineering, Minor in Cyber Security}
+% Three-column Layout: Education, Skills
+\begin{minipage}[t]{1\textwidth} 
+\begin{multicols}{2}
+    % Education
+    \section{\Large Education} 
+    \subsection{Texas A\&M University}
+    \descript{BS in Computer Engineering}
+    \descript{\normalsize Minor in Cyber Security}
     \location{May 2021 | College Station, TX}
-    Graduated Summa Cum Laude. \\
-    GPA: 3.94 / 4.0.
-    \sectionsep % This assumes \sectionsep is defined somewhere as a space
-\end{minipage}
+    Summa Cum Laude \\
+    \location{GPA: 3.94 / 4.0}
+    \sectionsep
+    
+    \columnbreak
+    
+    % Skills
+    \section{\Large Skills}
+    \subsection{Languages}
+    Python \textbullet{} C/C++ \textbullet{} C\# \\
+    JavaScript \textbullet{} CSS
+    \subsection{Tools}
+    Azure \textbullet{} Databricks \textbullet{} Git/Github/Bitbucket/Gitlab \\ 
+    ONNX \textbullet{} Numpy \textbullet{} Pandas \\
+    GraphQL \textbullet{} MongoDB
+    PyTorch \textbullet{} Tensorflow
+    \sectionsep
 
-\begin{minipage}[t]{1\textwidth}
-    \section{Skills}
-    \titlerule % Draws a horizontal line after the section title
-    \vspace{2.5mm} % Adds some vertical space after the title rule
+\end{multicols}
+\end{minipage} 
 
-    \runsubsection{Languages}
-    \descript{\textbullet{} Python, C/C++, C\#, JavaScript, CSS}
-    % \vspace{2.5mm} % Adds some vertical space after the title rule
-    % \begin{tightemize}
-    %     \item Python, C/C++, C\#, JavaScript, CSS
-    % \end{tightemize}
-    \sectionsep % Adds some predefined vertical space after the subsection
-
-    \runsubsection{Tools}
-    \descript{\textbullet{} Databricks, Git, WSL, Docker, ONNX, Databricks}
-    % \begin{tightemize}
-    %     \item Azure, Databricks, Git, ONNX, Numpy, Pandas, GraphQL
-    %     \item MongoDB, PyTorch, Tensorflow, Linux, Docker
-    % \end{tightemize}
-    % \\ Azure \textbullet{} Databricks \textbullet{} Git \textbullet{} ONNX \textbullet{} Numpy \textbullet{} Pandas \textbullet{} GraphQL
-    % \\ MongoDB \textbullet{} PyTorch \textbullet{} Tensorflow \textbullet{} Linux \textbullet{} Docker
-    \sectionsep % Adds some predefined vertical space after the subsection
-\end{minipage}
+\vspace{-3mm} % Reduced space
 
 % Experience Section
 \begin{minipage}[t]{1\textwidth}
 \section{Experience}
 \titlerule
-\vspace{2.5 mm}
+\vspace{1mm} % Reduced space
 
 % Dell Experience 1
 \runsubsection{Dell}
 \descript{| Software Engineer, CTO Software PoC Team }
 \location{June 2022 - Present | Austin, TX}
-\vspace{\topsep}
 \begin{tightemize}
 \item Spearheaded an AI/ML model optimization initiative using ONNX Runtime and advanced quantization tools, achieving a Y\% improvement in model performance and efficiency for targeted hardware applications.
 \item Assisted in building an MLOps pipeline in Databricks, migrating model data and introducing data/model drift detection to monitor performance.
@@ -161,6 +98,16 @@
 \end{tightemize}
 \sectionsep
 
+% Texas A&M Teaching
+\runsubsection{Texas A\&M}
+\descript{| Peer Teacher }
+\location{June 2019 – Aug 2019 | College Station, TX}
+\begin{tightemize}
+\item Taught {\it Intro to Computer Systems} to a class of 35 students, effectively communicating core concepts and fostering a collaborative learning environment.
+\item Designed and tailored lesson plans to accommodate diverse learning styles, promoting both individual and group engagement.
+\end{tightemize}
+\sectionsep
+
 % Thought Trace Internship
 \runsubsection{Thought Trace}
 \descript{| Data Science Intern}
@@ -171,17 +118,8 @@
 \item Actively participated in SCRUM meetings and collaborated with data scientists on problem-solving, contributing to a cohesive team dynamic and project success.
 \end{tightemize}
 \sectionsep
-\end{minipage}
 
-% Texas A&M Teaching
-\runsubsection{Texas A\&M}
-\descript{| Peer Teacher }
-\location{June 2019 – Aug 2019 | College Station, TX}
-\begin{tightemize}
-    \item Instructed 35 students in {\it Intro to Computer Systems}
-    \item Developed adaptive lesson plans to engage a variety of learning styles, enhancing both personal and group involvement.    
-\end{tightemize}
-\sectionsep
+\end{minipage}
 
 % Projects Section
 \begin{minipage}[t]{1\textwidth}
@@ -193,15 +131,14 @@
 % Project 1
 \runsubsection{Multi-Instrumental Tactile Synthesizer (MITS)}
 \descript{| Tools: Arduino, Swift, Reaper (DAW)}
-Gloves that convert hand gestures into musical instrument sounds, utilizing Arduino and DAW software, demonstrating gesture recognition and sound synthesis.
+Developed "Multi-Instrumental Tactile Synthesizer" (MITS) gloves that convert hand gestures into musical instrument sounds, utilizing Arduino and DAW software, demonstrating innovative application of gesture recognition and sound synthesis.
 \sectionsep
 
 % Project 2
 \runsubsection{Receipt Reader}
 \descript{| Tools: Node JS, HTML, CSS, Google APIs}
-Web app enabling users to authenticate, upload receipts, and extract data with OCR, with seamless Google Sheets integration for expense tracking and analysis.
+Engineered a web application for receipt management that allows users to authenticate via Google Identity, upload receipt images, and utilize Google's Vision OCR for text extraction. Implemented a parsing service to delineate items and costs, facilitating user validation before aggregating data into a Google Sheets spreadsheet for long-term tracking and analysis.
 \sectionsep
 
 \end{minipage} 
-
 \end{document}
