@@ -1,0 +1,26 @@
+# Ignore all files by default
+*
+
+# But don't ignore directories, so we can recurse into them
+!*/
+
+# Don't ignore .gitignore and .gitkeep files
+!.gitignore
+!.gitkeep
+
+# Allow files with these extensions
+!*.tex
+!*.cls
+!*.pdf
+
+# Specifically allow the fonts directory and anything inside it
+!fonts/
+!fonts/*
+
+# Ignore LaTeX generated files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
