@@ -83,6 +83,7 @@
 
 \newcommand{\project}[1]{%
   \textbf{--} \color{subheadings}
+  % \color{subheadings}
   \raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont #1 \normalfont
 }
 
