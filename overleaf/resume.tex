@@ -164,9 +164,9 @@
 
   % Header: name and contact information
   \begin{header}
-    \fontsize{25pt}{25pt}\selectfont Nick Wanner
+    \fontsize{20pt}{25pt}\selectfont Nick Wanner
 
-    \vspace{5pt}
+    \vspace{2.5pt}
 
     \normalsize
     \mbox{Austin, Texas, United States}%
@@ -183,113 +183,150 @@
   % Summary section
   \section{Summary}
   \begin{onecolentry}
-    Mid-level back-end software engineer with 4+ years of R\&D experience across automation, firmware, networking, microservices, and AI/ML, with 5 patents awarded for innovative solutions. Proven ability to lead projects at Dell, eager to drive cloud-focused initiatives.
+    Back-end software engineer with 4+ years of experience across microservices, agentic AI, firmware, and IoT. Inventor on 7 patents. Proven ability to identify critical problems, design novel architectures, and deliver impactful solutions. Focused on building robust distributed systems, particularly within the Generative AI domain
   \end{onecolentry}
 
   % Education section
   \section{Education}
-  \begin{twocolentry}{2017 – 2021}{\textbf{B.S. Computer Engineering • 3.95/4.00}}
+    \begin{twocolentry}{2021}{\textbf{B.S. Computer Engineering • Texas A\&M University • 3.95 GPA}}
   \end{twocolentry}
-  \vspace{0.1cm}
-  \begin{onecolentry}
-    Texas A\&M University
-  \end{onecolentry}
 
   % Experience section
   \section{Experience}
 
-% ─── Dell Innovation Studio ───
-  \begin{twocolentry}{June 2024 – Present}{\textbf{Software Engineer II}, Dell Technologies – OCTO — Austin, TX}
+% ─── Dell OCTO ───
+  \begin{twocolentry}{2023 – Present}{\textbf{Software Engineer II}, Dell Technologies – CTO Engineering}
   \end{twocolentry}
   \vspace{0.1cm}
   \begin{onecolentry}
     \begin{highlights}
-        \item Agentic IT Admin Fleet Management Assistant \begin{highlights}
-            \item Led design and implementation of a distributed, agentic platform for IT fleet management, enabling autonomous vulnerability detection, remediation planning, and patch deployment with human-in-the-loop control.
-            \item Built a modular orchestration system with ledger-based goal tracking and agent reasoning, supporting API-first integrations across internal tools and external UIs.
-            \item Delivered end-to-end architecture including multi-agent orchestration, persistent state management, and secure endpoint execution via Intune and direct deployment.
-            \item Drove ideation for 30+ GenAI-focused patents; platform was featured at Dell Tech World and catalyzed strategic interest from multiple internal partner groups.
-        \end{highlights}
-        \item Agentic Market Analysis Research Assistant \begin{highlights}
-            \item Co-led architectural analysis and re-scoping of a legacy market analysis platform into a scalable, agentically driven RAG system—integrating semantic classification, multi-hop planning, and tool execution to streamline research workflows across global operations. Tech stack: Python, FastAPI, Redis, SingleStore, Kubernetes, LangGraph, LLMs (OpenAI, local models).
-            \item Designed and implemented the system’s central acting agent, including semantic intent routing, reaction-planning loops, and a modular plugin-based tool registry, enabling configurable agent behavior and clear separation of reasoning steps.
-            \item Initiated delivery process improvements and CI/CD automation; collaborated cross-functionally to onboard and mentor engineers and data scientists in generative AI best practices. Improvements to the platform have reduced manual research time by ~50% and helped avoid $1.5M+ in annual labor costs.
-    \end{highlights}
+    
+        % ─── verbose ───
+        % \item Agentic Market Analysis Research Assistant \begin{highlights}
+        %     \item Co-led architectural redesign of a legacy RAG solution into a scalable, agent-driven research platform, enabling autonomous querying, multi-step analysis, and comprehensive response generation—reducing analyst research time by 50\% and saving ~\$1.5M annually
+        %     \item Owned architectural documentation, designed key system components including the central reasoning agent (semantic intent routing, reaction-planning loops), and implemented a modular, plugin-based tool registry for configurable agent behavior
+        %     \item Provisioned scalable Kubernetes (KoB) infrastructure and established robust CI/CD pipelines, ensuring platform stability at scale
+        % \end{highlights}
+        % \item Agentic IT Admin Fleet Management Assistant \begin{highlights}
+        %     \item Led end-to-end design and development of an API-first, UI-agnostic agentic service for autonomous IT fleet management, including vulnerability detection, remediation planning, and Intune-based patch deployment with human-in-loop approval
+        %     \item Built a ledger-based goal-tracking orchestration system supporting multi-agent collaboration, persistent state management, and secure execution across distributed endpoints
+        %     \item Delivered end-to-end architecture including multi-agent orchestration, persistent state management, and secure endpoint execution via Intune and direct deployment
+        %     \item Drove ideation for 10+ GenAI patent filings (contributed to 20+ more); demoed at Dell Tech World, catalyzing strategic interest from 5+ internal business groups
+        % \end{highlights}
+
+        % ─── concise ───
+        \item Agentic Market Analysis Platform
+          \begin{highlights}
+            \item Led redesign of RAG tool into scalable agentic service, cutting workload by 50\% and saving \$1.5M/year
+            \item Architected agent with semantic routing and planning loops, boosting assistant response accuracy by 30\%.
+            \item Operationalized and managed deployments of 4 microservices and 2 databases via Kubernetes and CI/CD.
+          \end{highlights}
+    
+        \item Agentic IT Admin Assistant (R\&D PoC)
+          \begin{highlights}
+            \item Cut 1–5 days of IT admin work to under 3 minutes by developing a multi-agent assistant for CVE research, Intune patch planning, and fleet rollouts.
+            \item Filed 10+ GenAI patents (contributed to 20+); demoed at Dell Tech World, securing buy-in from 5+ orgs
+          \end{highlights}
+        \item Designed a config-driven Databricks MLOps pipeline template, seamlessly adopted by data scientists; migrated 5 production models, streamlining deployment and reducing setup time by 30\%
+        \item Developed a config-driven model optimization service using ONNX Runtime and Hugging Face, increasing model inference speed by 15\% and halving storage needs on client devices
     \end{highlights}
   \end{onecolentry}
-
   \vspace{0.2cm}
 
   % ─── Dell Innovation Studio ───
-  \begin{twocolentry}{June 2022 – Present}{\textbf{Software Engineer}, Dell Technologies – Innovation Studio — Austin, TX}
+  \begin{twocolentry}{2021 – 2023}{\textbf{Software Engineer}, Dell Technologies – Innovation Studio}
   \end{twocolentry}
   \vspace{0.1cm}
   \begin{onecolentry}
     \begin{highlights}
-      \item Pioneered the design and adoption of Databricks MLOps stacks for pipeline templatisation, configured to be config-driven for seamless adoption by data scientists; migrated 5 working models to the new system, streamlining deployment and cutting setup time by 30\%.
-      \item Spearheaded the development of a config-driven model optimization service utilizing ONNX Runtime and Hugging Face; boosted inference speeds by 15\% and reduced storage requirements by 50\% on client devices.
-      \item Developed the edge component of a model management framework, setting up an edge server with REST API endpoints to offload client inference to the edge; optimized models using ONNX Runtime and other optimization tools, enhancing inference speed and reducing client device workload.
-      \item Architected and implemented communication and state-machine logic for a Wi-Fi-based Dell gaming controller, enhancing signal management; contributed to a CES award–winning solution and secured 2 patents for network resource distribution.
-      \item Designed and developed an algorithm using a knapsack-like approach for a peripheral-to-system mapping service, optimizing port-to-system allocations based on user setups; built a microservice-based API consumption layer to support unboxing workflows and cart checkouts, enhancing user understanding of workstation setups and driving time to productivity by 100\%.
+      % \item Developed the edge component of a model management framework, setting up an edge server with REST API endpoints to offload client inference to the edge; optimized models using ONNX Runtime and other optimization tools, enhancing inference speed and reducing client device workload
+      \item Designed state-machine and networking logic for Dell’s Wi-Fi gaming controller, enabling key UX features; secured 2 patents and contributed to CES award recognition
+      % \item Designed and developed an algorithm using a knapsack-like approach for a peripheral-to-system mapping service, optimizing port-to-system allocations based on user setups; built a microservice-based API consumption layer to support unboxing workflows and cart checkouts, enhancing user understanding of workstation setups and driving time to productivity by 100\%
+      \item Built a configuration-driven automation framework that allows 24/7 telemetry data collection for novel AI model training; accelerated training data capture by 300\% and reduced setup complexity by 75\%
+      \item Delivered Bluetooth pairing PoC automating secure device recognition, enabling instant pre-pairing at checkout, and reducing user interaction time by 90\%
+      \item Developed PoC for interference avoidance in wireless dock mesh networks, enabling decentralized self-organizing bandwidth optimization in crowded spaces; earned 2 patents
+      % \item Engineered an experimental solution to minimize packet jitter for TCP/UDP transmissions during network-intensive workloads, achieving a 95\% reduction in jitter with minor latency trade-offs
     \end{highlights}
   \end{onecolentry}
 
   \vspace{0.2cm}
 
-  % ─── Technology Strategy Team ───
-  \begin{twocolentry}{June 2021 – June 2022}{\textbf{Software Engineer}, Dell Technologies – Technology Strategy Team — Austin, TX}
+  % ─── Dell Internship ───
+  \begin{twocolentry}{2020}{\textbf{Software Engineering Intern}, Dell Technologies – Tech Strategy Team}
   \end{twocolentry}
   \vspace{0.1cm}
   \begin{onecolentry}
     \begin{highlights}
-      \item Built a configuration-driven automation framework for AI model data collection, automating workload orchestration, settings adjustments, and telemetry capture; enabled 24/7 data collection, increasing speed by 3× and reducing future workload automation time by 75\%.
-      \item Developed a proof of concept for a proprietary Dell Bluetooth pairing experience, enhancing user interaction by automating device recognition; enabled pre-pairing at checkout and created a secure, simplified pairing process, cutting user interaction time by 90\%.
-      \item Developed a proof of concept for interference avoidance in high-density ad-hoc mesh networks for wireless docks, exploring centralized, decentralized, and hybrid configurations; enabled docks to self-organize and optimize bandwidth, reducing interference in crowded environments, resulting in 2 patents.
-      \item Engineered an experimental solution to minimize packet jitter for TCP/UDP transmissions during network-intensive workloads, achieving a 95\% reduction in jitter with minor latency trade-offs.
-    \end{highlights}
-  \end{onecolentry}
-
-  \vspace{0.2cm}
-
-  % ─── Software Engineering Intern ───
-  \begin{twocolentry}{June 2020 – August 2020}{\textbf{Software Engineering Intern}, Dell Technologies – Technology Strategy Team — Austin, TX}
-  \end{twocolentry}
-  \vspace{0.1cm}
-  \begin{onecolentry}
-    \begin{highlights}
-      \item Led the development of a proof of concept for a Collaboration Touchpad with integrated conferencing controls, collaborating with mechanical, electrical, firmware, and UX teams to design HID functionalities; facilitated integration with Zoom, Microsoft Teams, and other conferencing software, earning a patent and accelerating time to market by 50\%.
+      \item Led PoC for a Collaboration Touchpad with HID conferencing controls, aligning HW, FW, and UX teams. Drove Zoom/Teams integration, earned a patent, and cut time to market by 50\%; now in production on Dell systems
     \end{highlights}
   \end{onecolentry}
 
   \vspace{0.2cm}
 
   % ─── ThoughtTrace Internship ───
-  \begin{twocolentry}{June 2018 – August 2018}{\textbf{Software Engineer Intern}, ThoughtTrace — Houston, TX}
+  \begin{twocolentry}{2018}{\textbf{Data Science Intern}, ThoughtTrace (AI contract analytics startup)}
   \end{twocolentry}
   \vspace{0.1cm}
   \begin{onecolentry}
     \begin{highlights}
-      \item Developed a web app for real-time data labeling and QA, boosting efficiency by 35\% and replacing manual CSV batch processes with direct integration into the training data pool.
-      \item Hand-labeled training samples for reinforcement learning, enhancing model robustness and increasing accuracy by 8\% through precise annotation of complex lease documents.
+      \item Developed a real-time service to automate SME QA labeling, replacing manual workflows with a centralized pipeline. Increased iteration speed by 100\% and improved model accuracy by up to 8\%
     \end{highlights}
   \end{onecolentry}
 
   % Skills section
-  \section{Skills}
-  \begin{onecolentry}
-    \textbf{Languages:} Python, C/C++, C\#, JavaScript, SQL
-  \end{onecolentry}
+  % \section{Skills}
+  % \begin{onecolentry}
+  %   \textbf{Languages:} Python, C/C++, C\#, JavaScript, SQL, React, HTML
+  % \end{onecolentry}
 
-  \vspace{0.2cm}
+  % \vspace{0.2cm}
 
-  \begin{onecolentry}
-    \textbf{Frameworks \& Tools:} ASP.NET, Vue.js, Express.js, React, GraphQL, Docker, Kubernetes, Git, Jenkins, Azure, WSL, SQLAlchemy, Alembic, RESTful APIs, pytest, Databricks, Spark, TensorFlow, Hugging Face, ONNX Runtime, Airflow, MLflow
-  \end{onecolentry}
+  % \begin{onecolentry}
+  %   \textbf{Frameworks \& Tools:} Docker, Azure, Kubernetes, Git, WSL, RESTful APIs, Databricks, Spark, Hugging Face, ONNX, Ollama, Langfuse, OTEL, Airflow, LLMs, LangGraph (LCEL)
+  % \end{onecolentry}
 
-  \vspace{0.2cm}
+  % \vspace{0.2cm}
 
-  \begin{onecolentry}
-    \textbf{Techniques \& Concepts:} Agile/Scrum, Object-Oriented Programming (OOP), Version Control, CI/CD, API Design, System Design, Cross-Functional Collaboration, Code Review, Security, ETL, Design Patterns
-  \end{onecolentry}
+  % \begin{onecolentry}
+  %   \textbf{Techniques \& Concepts:} Agile/Scrum, Object-Oriented Programming (OOP), Version Control, CI/CD, API Design, System Design, Cross-Functional Collaboration, Code Review, Security, ETL, Design Patterns
+  % \end{onecolentry}
+
+% \section{Skills}
+%     \begin{onecolentry}
+%     \textbf{Languages:} Python, C/C++, C\#, JavaScript, SQL, NO-SQL
+%     \end{onecolentry}
+    
+%     \vspace{0.1cm}
+    
+%     \begin{onecolentry}
+%     \textbf{Cloud \& DevOps:} Azure, Kubernetes, Docker, Git, CI/CD
+%     \end{onecolentry}
+    
+%     \vspace{0.1cm}
+    
+%     \begin{onecolentry}
+%     \textbf{Data \& AI:} Databricks, Spark, Hugging Face, ONNX, LangGraph (LCEL), Vector DBs (PGVector)
+%     \end{onecolentry}
+    
+%     \vspace{0.1cm}
+    
+%     \begin{onecolentry}
+%     \textbf{Distributed Systems:} Event Hub, OpenTelemetry, Prometheus/Grafana
+%     \end{onecolentry}
+    
+%     \vspace{0.1cm}
+    
+%     \begin{onecolentry}
+%     \textbf{Principles \& Practices:} System Design, Design Patterns, Agile / Scrum, Code Review, Cross-functional Leadership \end{onecolentry}
+
+\section{Skills}
+\begin{onecolentry}
+\textbf{Languages:} Python, C/C++, C\#, JavaScript, SQL, NoSQL \\
+\textbf{Cloud \& DevOps:} Azure, Kubernetes, Docker, Git, CI/CD \\
+\textbf{Data \& AI:} Databricks, Spark, Hugging Face, ONNX, LangGraph (LCEL), PGVector \\
+\textbf{Distributed Systems:} Event Hub, OpenTelemetry, Prometheus, Grafana \\
+\textbf{Practices:} System Design, Design Patterns, Agile/Scrum, Code Review, Cross-functional Leadership
+\end{onecolentry}
+
 
 \end{document}
